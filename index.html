@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<input value="Vladimir" class="first-name input" id="first-name" />
+<input value="Solovev" class="last-name input" id="last-name" />
+<input value="Galle" class="address input" id="address" />
+
+<select id="cities">
+    <option>Kiev</option>
+    <option selected="selected">Minsk</option>
+    <option>Moscow</option> 
+</select>
+
+<script>
+
+let firstNameId = "first-name";
+let firstNameE1 = document.getElementById(firstNameId);
+
+let lastNameId = "last-name";
+let lastNameE1 = document.getElementById(lastNameId);
+
+let addressId = "address";
+let addressE1 = document.getElementById(addressId);
+
+let citiesId = "cities";
+let citiesEl = document.getElementById(citiesId);
+ 
+alert(firstNameE1.value);
+alert(lastNameE1.value);
+alert(addressE1.value);
+alert(citiesEl.value)
+
+
+</script>
+
+
+
+    <!-- <input value="Hello!" class="hell-message input" id="hello-message" />
+
+    <script>
+
+        let helloMessageElement;
+        let helloMessageID = "hello-message"; 
+
+        helloMessageElement = document.getElementById(helloMessageID);
+
+        alert(helloMessageElement.value);
+        alert(helloMessageElement.id);
+        alert(helloMessageElement.className);
+
+    </script> -->
+
+
+    <!-- <p id="text-example">This is the text.</p>
+    <button onclick="changeText()">Click here</button>
+    <script>
+        function changeText() {
+            let par = document.getElementById("text-example");
+            par.textContent = "This is another text!"
+        }
+    </script> -->
+
+    <!-- <script>
+        let wordCat;
+        wordCat = 'a Cat';
+
+        let translateCat;
+        translateCat = 'Кот';
+
+        alert(wordCat);
+        alert(translateCat);
+    </script> -->
+
+
+       <!-- Hello <input id="message" -->
+       <!-- <script>
+          setInterval(function() {
+            let messageInput = document.getElementById('message');
+            alert(messageInput.value)
+        }, 4000)
+        </script> -->
+    
+    <p>
+    <hr/>
+    <a href="google.com">Google</a>
+    <b>
+        Helloooo
+    </b>
+    </p>
+    <img src="https://www.imgacademy.com/sites/default/files/legacyhotel.jpg" alt="IMG" style="width: 500px;">
+    <ol>
+        <li class="red large">Learn HTML</li>
+        <li>Learn CSS</li>
+        <li>Learn JS</li>
+    </ol>
+    <style>
+        .red {
+            color: red;
+        }
+    
+        .large {
+            font-size: 30;
+        }
+    </style>   
+
+    
+</body>
+</html>
+
+
