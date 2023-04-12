@@ -1,7 +1,39 @@
-// ================DOM jQuery===============================================
+// ================ Interactive programming ============================
 
-let headingElement = document.getElementById("main-heading");
-console.log(headingElement.innerHTML);
+/* let timeUp = function () {
+    alert("Time is up!");
+};
+setTimeout (timeUp, 3000); */
+
+/* let counter = 1;
+let printMessage = function () {
+    console.log("You are looking at the screen " + counter + "sec already");
+    counter++;
+};
+let intervalId = setInterval(printMessage, 1000);
+clearInterval(intervalId); */
+
+/* let leftOffset = 0;
+let moveHeading = function () {
+    $("#main-heading").offset({ left: leftOffset });
+
+    leftOffset++;
+
+    if (leftOffset > 200) {
+        leftOffset = 0;
+    }
+};
+setInterval (moveHeading, 30); */
+
+/* let clickHandler = function (event) {
+    console.log("Click! " + event.pageX + " " + event.pageY);
+};
+$("html").click(clickHandler); */
+
+// ================ DOM jQuery===============================================
+
+/* let headingElement = document.getElementById("main-heading");
+console.log(headingElement.innerHTML); */
 
 // let newHeadingText = prompt("Enter a new heading:");
 // headingElement.innerHTML = newHeadingText;
@@ -18,7 +50,7 @@ console.log(headingElement.innerHTML);
 // $("h1").fadeOut(3000);
 // $("h1").text("This text will disappear soon").fadeOut(3000);
 // $("h1").fadeOut(2000).fadeIn(2000);
-$("h1").slideUp(1000).slideDown(1000);
+// $("h1").slideUp(1000).slideDown(1000);
 
 //================= FUNCTIONS =========================================
 
