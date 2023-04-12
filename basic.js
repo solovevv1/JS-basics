@@ -1,3 +1,57 @@
+//================= FUNCTIONS =========================================
+
+/* let myFirstFunction = function () {
+    console.log("Hello World!");
+};
+myFirstFunction(); */
+
+/* let sayHello = function (name) {
+    alert("Hello " + name + "!");
+};
+sayHello("Tom") */
+
+/* let drawCats = function (howManyTimes) {
+    for (i = 0; i < howManyTimes; i++) {
+        console.log(i + " =^.^=");
+    }
+};
+drawCats(5) */
+
+/* let multipleTimes = function (howManyTimes, whatToDraw) {
+    for (i = 0; i < howManyTimes; i++) {
+        console.log(i + " " + whatToDraw);
+    }
+};
+multipleTimes(5, ":-)") */
+
+/* let double = function (number) {
+    return number * 2;
+};
+console.log(double(2) + double(3)); */
+
+/* let pickRandomWord = function (words) {
+    return words[Math.floor(Math.random() * words.length)];
+};
+let randomWords = ["business", "finance", "investment", "leadership"];
+console.log(pickRandomWord(randomWords)); */
+
+/* let fifthLetter = function (name) {
+    if (name.length < 4) {
+        return "short name";
+    }  
+        return "long name";
+};
+console.log(fifthLetter("Vlad")); */
+
+/* function add(a, b) {
+    return a + b;
+}
+function multiply(a, b) {
+    return a * b;
+}
+let result = add(multiply(36325, 9825), 777);
+console.log(result) */
+
 // ================ HANGMAN GAME =======================================
 
 /*  Pick a random word
@@ -18,7 +72,7 @@
     }
 Congratulate the player on guessing the word! */
 
-let words = [
+/* let words = [
     "javascript",
     "monkey",
     "amazing",
@@ -58,7 +112,7 @@ remainingLetters--;
 }
 // Show the answer and congratulate the player
 alert(answerArray.join(" "));
-alert("Good job! The answer was " + word);
+alert("Good job! The answer was " + word); */
 
 
 // ================ Loops ==============================================
