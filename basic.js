@@ -1,3 +1,25 @@
+// ================DOM jQuery===============================================
+
+let headingElement = document.getElementById("main-heading");
+console.log(headingElement.innerHTML);
+
+// let newHeadingText = prompt("Enter a new heading:");
+// headingElement.innerHTML = newHeadingText;
+
+// $("#main-heading").text(newHeadingText);
+
+// $("body").append("<p>This is a new paragraph</p>");
+
+/* for (let i = 0; i < 3; i++) {
+    let hobby = prompt("Name one your hobby");
+    $("body").append("<p>" + hobby + "</p>");
+} */
+
+// $("h1").fadeOut(3000);
+// $("h1").text("This text will disappear soon").fadeOut(3000);
+// $("h1").fadeOut(2000).fadeIn(2000);
+$("h1").slideUp(1000).slideDown(1000);
+
 //================= FUNCTIONS =========================================
 
 /* let myFirstFunction = function () {
