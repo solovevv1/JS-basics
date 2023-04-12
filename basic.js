@@ -30,8 +30,8 @@ let word = words[Math.floor(Math.random() * words.length)];
 // Set up the answer array
 let answerArray = [];
 for (let i = 0; i < word.length; i++) {
-answerArray[i] = "_";
-}
+    answerArray[i] = "_";
+  }
 let remainingLetters = word.length;
 
 // The game loop
@@ -355,6 +355,6 @@ const attCount = 10; */
 /* function getUserName() {
     const UserName = prompt("Hi friend");
     return UserName();
-}
+} */
 
 // const UserName = getUserName();
