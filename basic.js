@@ -1,5 +1,63 @@
 // ================ OOP ===============================================
 
+/* let dog = {
+    name: "Bobic",
+    age: 3,
+    isAwesome: true
+}
+console.log(dog.name);
+
+dog.bark = function () {
+    console.log("Woof! I am " + this.name + "!");
+};
+dog.bark(); */
+
+/* function invest() {
+    console.log(this.price + " is the price, " + this.buy);
+};
+let money = {
+    price: "$100",
+    buy: "buy it!",
+    invest: invest
+}
+money.invest(); */
+
+
+/* function Car(x, y) {
+    this.x = x;
+    this.y = y;
+};
+
+Car.prototype.draw = function () {
+    let carHtml = '<img width=40% src="/tesla.png">';
+
+this.carElement = $(carHtml);
+
+this.carElement.css({
+    position: "absolute",
+    left: this.x,
+    top: this.y
+});
+
+$("body").append(this.carElement);
+};
+
+Car.prototype.moveRight = function () {
+    this.x += 5;
+    this.carElement.css({
+        left: this.x,
+        top: this.y
+    });
+};
+
+let tesla = new Car(5, 5);
+let nissan = new Car(700, 5);
+tesla.draw();
+nissan.draw();
+tesla.moveRight(); */
+
+
+
 
 // ================ Interactive programming ============================
 
