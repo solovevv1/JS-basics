@@ -1,3 +1,110 @@
+// ================ CANVAS ============================================
+
+// let canvas = document.getElementById("canvas");
+// let ctx = canvas.getContext("2d");
+
+// ctx.fillStyle = "Blue";
+// ctx.fillRect(0, 0, 100, 100);
+// for (let i = 0; i < 5; i++) {
+//     ctx.fillRect(i * 10, i * 10, 10, 10);
+// }
+
+/* function circle(x, y, radius) {
+    ctx.beginPath();
+    ctx.arc(x, y, radius, 0, Math.PI * 2, false)
+    ctx.stroke();
+}
+ctx.lineWidth = 4;
+ctx.strokeStyle = "Blue";
+circle(100, 100, 30); */
+
+/* let position = 0;
+setInterval(function () {
+    ctx.clearRect(0, 0, 500, 500);
+    ctx.fillRect(position, 0, 50, 50);
+
+    position++;
+    if (position > 500) {
+        position = 0;
+    }
+}, 30); */
+
+/* let size = 0;
+setInterval(function () {
+    ctx.clearRect(0, 0, 500, 500);
+    ctx.fillRect(0, 0, size, size);
+
+    size++;
+    if (size > 500) {
+        size = 0;
+    }
+}, 30); */
+
+// ---------------Wild BEE-----------------------------------
+/*   function circle(x, y, radius, fillCircle) {
+    ctx.beginPath();
+    ctx.arc(x, y, radius, 0, Math.PI * 2, false);
+    if (fillCircle) {
+        ctx.fill();
+    } else {
+        ctx.stroke();
+    }
+  };
+  function drawBee(x, y) {
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = "Black";
+    ctx.fillStyle = "Gold";
+
+    circle(x, y, 8, true);
+    circle(x, y, 8, false);
+    circle(x - 5, y - 11, 5, false);
+    circle(x + 5, y - 11, 5, false);
+    circle(x - 2, y - 1, 2, false);
+    circle(x + 2, y - 1, 2, false);
+  };
+
+  function update(coordinate) {
+    let offset = Math.random() * 4 - 2;
+    coordinate += offset;
+     if (coordinate > 500) {
+    coordinate = 500;
+    }
+     if (coordinate < 0) {
+    coordinate = 0;
+    }
+     return coordinate;
+    };
+
+let canvas = document.getElementById("canvas");
+let ctx = canvas.getContext("2d");
+let x = 250;
+let y = 250;
+
+setInterval(function () {
+ctx.clearRect(0, 0, 500, 500);
+drawBee(x, y);
+x = update(x);
+y = update(y);
+ ctx.strokeRect(0, 0, 500, 500);
+}, 50); */
+
+
+// $("body").keydown(function (event) {
+//     console.log(event.keyCode);
+// });
+
+let keyNames = {
+    32: "space",
+    37: "left",
+    38: "up",
+    39: "right",
+    40: "down"
+    };
+    $("body").keydown(function (event) {
+        console.log(keyNames[event.keyCode]);
+    });
+
+
 // ================ OOP ===============================================
 
 /* let dog = {
