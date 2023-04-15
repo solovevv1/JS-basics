@@ -93,7 +93,7 @@ y = update(y);
 //     console.log(event.keyCode);
 // });
 
-let keyNames = {
+/* let keyNames = {
     32: "space",
     37: "left",
     38: "up",
@@ -102,7 +102,7 @@ let keyNames = {
     };
     $("body").keydown(function (event) {
         console.log(keyNames[event.keyCode]);
-    });
+    }); */
 
 
 // ================ OOP ===============================================
