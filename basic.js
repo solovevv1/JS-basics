@@ -1,3 +1,161 @@
+// ================ Arrays Funcitons Head First ==========================================
+
+/* let scores = [60, 50, 60, 58, 54, 54,
+    58, 50, 52, 54, 48, 69,
+    34, 55, 51, 52, 44, 51,
+    69, 64, 66, 55, 52, 61,
+    46, 31, 57, 52, 44, 18,
+    41, 53, 55, 61, 51, 44];
+    
+    let highScore = 0;
+    let output;
+    for (let i = 0; i < scores.length; i++) {
+    output = "Bubble solution #" + i + " score: " + scores[i];
+    console.log(output);
+        if (scores[i] > highScore) {
+        highScore = scores[i];
+        }
+    }
+    console.log("Bubbles tests: " + scores.length);
+    console.log("Highest bubble score: " + highScore);
+
+    let bestSolutions = [];
+    for (let i = 0; i < scores.length; i++) {
+        if (scores[i] == highScore) {
+        bestSolutions.push(i);
+        }
+    }
+    console.log("Solutions with the highest score: " + bestSolutions); */
+
+   /*  let scores = [60, 50, 60, 58, 54, 54, 58, 50, 52, 54, 48, 69,
+                  34, 55, 51, 52, 44, 51, 69, 64, 66, 55, 52, 61,
+                  46, 31, 57, 52, 44, 18, 41, 53, 55, 61, 51, 44];
+        function printAndGetHighScore(scores) {
+        let highScore = 0;
+        let output;
+          for (let i = 0; i < scores.length; i++) {
+                output = "Bubble solution #" + i + " score: " + scores[i];
+                console.log(output);
+            if (scores[i] > highScore) {
+                highScore = scores[i];
+            }
+          }
+          return highScore;
+        }
+        function getBestResults(scores, highScore) {
+        let bestSolutions = [];
+          for (let i = 0; i < scores.length; i++) {
+            if (scores[i] == highScore) {
+                bestSolutions.push(i);
+            }
+          }
+          return bestSolutions;
+        }
+        let highScore = printAndGetHighScore(scores);
+        console.log("Bubbles tests: " + scores.length);
+        console.log("Highest bubble score: " + highScore);
+        let bestSolutions = getBestResults(scores, highScore);
+        console.log("Solutions with the highest score: " + bestSolutions); */
+
+/* let taxi = {
+    make: "Webville Motors",
+    model: "Taxi",
+    year: 1955,
+    color: "yellow",
+    passengers: 4,
+    convertible: false,
+    mileage: 281341
+    };
+
+function prequal(car) {
+    if (car.mileage > 10000) {
+        return false;
+    } else if (car.year > 1960) {
+        return false;
+    }
+    return true;
+}
+
+let worthAlook = prequal(taxi)
+
+if (worthAlook) {
+    console.log("You gotta check out this " + taxi.make + " " + taxi.model);
+} else {
+    console.log("You should really pass on the " + taxi.make + " " + taxi.model);
+} */
+
+/* function getSecret(file, secretPassword) {
+    file.opened = file.opened + 1;
+    if (secretPassword == file.password) {
+        return file.contents;
+    } else {
+        return "Invalid password! No secret for you";
+    }
+}
+function setSecret(file, secretPassword, secret) {
+    if (secretPassword == file.password) {
+        file.opened = 0;
+        file.contents = secret;
+    }
+}
+let superSecretFile = {
+    level: "classified",
+    opened: 0,
+    password: 2,
+    contents: "Dr. Evel's next meeting is in Detroit."
+};
+
+let secret = getSecret(superSecretFile, 2);
+console.log(secret);
+
+setSecret(superSecretFile, 2, "Dr. Evel's next meeting is in Philadelphia.");
+secret = getSecret(superSecretFile, 2);
+console.log(secret); */
+
+/* let fiat = {
+    make: "Fiat",
+    model: "500",
+    year: 1957,
+    color: "Medium Blue",
+    passengers: 2,
+    convertible: false,
+    mileage: 88000,
+    started: false,
+    fuel: 0,
+    start: function() {
+        this.started = true;
+        },
+    stop: function() {
+        this.started = false;
+        },
+    drive: function() {
+        if (this.started) {
+            if (this.fuel > 0) {
+                alert(this.make + " " + this.model + " goes zoom zoom");
+                this.fuel = this.fuel - 1;
+            } else {
+                alert("Uh oh, out fo fuel.");
+                this.stop();
+            }
+        } else {
+            alert("You need to start the engine first.");
+            }
+        },
+    addFuel: function(amount) {
+        this.fuel = this.fuel + amount;
+    }
+};
+// fiat.start();
+fiat.drive();
+fiat.addFuel(2);
+fiat.start();
+fiat.drive();
+fiat.drive();
+fiat.drive();
+fiat.stop(); */
+
+
+
 // ================ CANVAS ============================================
 
 // let canvas = document.getElementById("canvas");
@@ -426,14 +584,14 @@ if (myName.length > 8) {
 
 // ================ Objects =============================================
 
-/* var myCrazyObject = {
+/* let myCrazyObject = {
     "name": "Нелепый объект",
     "some array": [7, 9, { purpose: "путаница", number: 123 }, 3.3],
     "random animal": "Банановая акула"
     };
 console.log(myCrazyObject["some array"][2].number); */
 
-/* var movies = {
+/* let movies = {
     "В поисках Немо": {
         releaseDate: 2003,
         duration: 100,
@@ -458,7 +616,7 @@ console.log(myCrazyObject["some array"][2].number); */
     console.log(findingNemo.format); */
     
 
-/* var owedMoney = {};
+/* let owedMoney = {};
 owedMoney["Джимми"] = 5;
 owedMoney["Анна"] = 7;
 console.log(owedMoney["Элис"]);
@@ -576,8 +734,8 @@ console.log(landmarks) */
 
 // =============== Basics ==========================================================
 
-/* var hadShower = true;
-var hadBackpack = false;
+/* let hadShower = true;
+let hadBackpack = false;
 hadBackpack && hadBackpack; */
 
 /* let hasApple = true;
