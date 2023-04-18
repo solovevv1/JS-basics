@@ -1,3 +1,58 @@
+// ================ Event Handling ======================================================
+
+/* function pageLoadedHandler() {
+    alert("I'm alive!");
+}
+window.onload = pageLoadedHandler; */
+
+
+window.onload = init;
+function init() {
+    // let image = document.getElementById("zero");
+    // image.onclick = showAnswer;
+
+    let images = document.getElementsByTagName("img");
+    for (let i = 0; i < images.length; i++) {
+        images[i].onclick = showAnswer;
+    }        
+}
+
+function showAnswer(eventObj) {
+    // let image = document.getElementById("zero");
+    // image.src = "zero.jpg";
+
+    let image = eventObj.target;
+    let name = image.id;
+    name = name + ".jpg";
+    image.src = name;
+
+    setTimeout(reblur, 3000, image);
+}
+function reblur(image) {
+    let name = image.id;
+    name = name + "blur.jpg";
+    image.src = name;
+}
+
+/* function timerHandler() {
+    alert("Wait for 3 seconds!")
+}
+setTimeout (timerHandler, 3000); */
+
+/* let tick = true;
+function clock() {
+    if (tick) {
+        console.log("Tick");
+        tick = false;
+    } else {
+        console.log("Tack");
+        tick = true;
+    }
+}
+// setInterval(clock, 1000); */
+
+
+
 // ================ Arrays Funcitons Head First ==========================================
 
 /* let scores = [60, 50, 60, 58, 54, 54,
