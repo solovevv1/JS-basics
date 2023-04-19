@@ -1,3 +1,84 @@
+//================ Prototype ========================================================
+
+/* function Dog(name, breed, weight) {
+    this.name = name;
+    this.breed = breed;
+    this.weight = weight;
+}
+
+Dog.prototype.species = "Canine";
+Dog.prototype.bark = function() {
+    if (this.weight > 25) {
+    console.log(this.name + " says Woof!");
+    } else {
+    console.log(this.name + " says Yip!");
+    }
+};
+Dog.prototype.run = function() {
+    console.log("Run!");
+};
+Dog.prototype.wag = function() {
+    console.log("Wag!");
+};
+
+// var fido = new Dog("Fido", "Mixed", 38);
+// var fluffy = new Dog("Fluffy", "Poodle", 30);
+// var spot = new Dog("Spot", "Chihuahua", 10);
+// spot.bark = function() {
+//     console.log(this.name + " says WOOFF!");
+// }
+
+// var barnaby = new Dog("Barnaby", "Basset Hound", 55);
+// Dog.prototype.sit = function() {
+//     console.log(this.name + " is now sitting");
+// }
+
+// fido.bark();
+// fido.run();
+// fido.wag();
+// fido.sit();
+
+// fluffy.bark();
+// fluffy.run();
+// fluffy.wag();
+
+// spot.bark();
+// spot.run();
+// spot.wag();
+
+
+function ShowDog(name, breed, weight, handler) {
+    // this.name = name;
+    // this.breed = breed;
+    // this.weight = weight;
+    Dog.call(this, name, breed, weight);
+    this.handler = handler;
+}
+
+ShowDog.prototype = new Dog();
+ShowDog.prototype.constructor = ShowDog;
+
+ShowDog.prototype.league = "Webville";
+ShowDog.prototype.stack = function() {
+    console.log("Stack");
+    };
+ShowDog.prototype.bait = function() {
+    console.log("Bait");
+    };
+ShowDog.prototype.gait = function(kind) {
+    console.log(kind + "ing");
+    };
+ShowDog.prototype.groom = function() {
+    console.log("Groom");
+    };
+
+let scotty = new ShowDog("Scotty", "Scottish Terrier", 15, "Cookie");
+scotty.stack();
+scotty.bark();
+console.log(scotty.league);
+console.log(scotty.species); */
+    
+
 //================ Creating Objects ==================================================
 
 /* function Dog(name, breed, weight) {
@@ -58,10 +139,6 @@ function Car(params) {
         }
         };
         } */
-
-
-
-
 
 
 //================ Serious Functions Annonymous Closures ==============================
