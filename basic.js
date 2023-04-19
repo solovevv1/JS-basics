@@ -1,3 +1,87 @@
+// =============== Functions ======================================
+/* let fly = function(num) {
+    for (let i = 0; i < num; i++) {
+        console.log("Flying!");
+    }
+}
+let superFly = fly;
+superFly(2); */
+
+/* var passengers = [ { name: "Jane Doloop", paid: true },
+                   { name: "Dr. Evel", paid: true },
+                   { name: "Sue Property", paid: false },
+                   { name: "John Funcall", paid: true } ];
+
+function processPassenger(passengers, testFunction) {
+    for (let i = 0; i < passengers.length; i++) {
+        if (testFunction(passengers[i])) {
+            return false;
+        }
+    }
+    return true;
+}
+
+function checkNoFlyList(passenger) {
+    return (passenger.name === "Dr. Evel");
+}
+
+function checkNotPaid(passenger) {
+    return (!passenger.paid);
+}
+
+function printPassenger(passenger) {
+    if (passenger.name && passenger.paid) {
+        return(console.log(passenger.name + " has paid"));
+    } else {
+        return(console.log(passenger.name + " has not paid"))
+    }
+}
+
+let allCanFly = processPassenger(passengers, checkNoFlyList);
+if (!allCanFly) {
+    console.log("The plane can't take off: we have a passenger on the no-fly-list");
+}
+
+let allPaid = processPassenger(passengers, checkNotPaid);
+if (!allPaid) {
+    console.log("The plane can't take off: not everyone has paid");
+}
+
+processPassenger(passengers, printPassenger) */
+
+
+//----------------- Method SORT -------------------------------------------
+
+var products = [ { name: "Grapefruit", calories: 170, color: "red",     sold: 8200 },
+                 { name: "Orange",     calories: 160, color: "orange",  sold: 12101 },
+                 { name: "Cola",       calories: 210, color: "caramel", sold: 25412 },
+                 { name: "Diet Cola",  calories: 0,   color: "caramel", sold: 43922 },
+                 { name: "Lemon",      calories: 200, color: "clear",   sold: 14983 },
+                 { name: "Raspberry",  calories: 180, color: "pink",    sold: 9427 },
+                 { name: "Root Beer",  calories: 200, color: "caramel", sold: 9909 },
+                 { name: "Water",      calories: 0,   color: "clear",   sold: 62123 }
+];
+ 
+function compareSold(colaA, colaB) {
+    if (colaA.sold > colaB.sold) {
+        return 1;
+    } else if (colaA.sold === colaB.sold) {
+        return 0;
+    } else {
+        return -1;
+    }
+}
+function printProducts (products) {
+    for (let i = 0; i < products.length; i++) {
+        console.log("Name: " + products[i].name +
+                    ", Calories: " + products[i].calories +
+                    ", Color: " + products[i].color +
+                    ", Sold: " + products[i].sold);
+    }
+}
+products.sort(compareSold);
+printProducts(products);
+
 // ================ Event Handling ======================================================
 
 /* function pageLoadedHandler() {
@@ -6,7 +90,7 @@
 window.onload = pageLoadedHandler; */
 
 
-window.onload = init;
+/* window.onload = init;
 function init() {
     // let image = document.getElementById("zero");
     // image.onclick = showAnswer;
@@ -32,7 +116,7 @@ function reblur(image) {
     let name = image.id;
     name = name + "blur.jpg";
     image.src = name;
-}
+} */
 
 /* function timerHandler() {
     alert("Wait for 3 seconds!")
