@@ -1,4 +1,89 @@
-// =============== Functions ======================================
+//================ Serious Functions Annonymous Closures ==============================
+
+/* function handler() { alert("Here we go!"); }
+window.onload = handler;
+
+window.onload = function() { alert("Here we go!"); }; */
+
+/* function cookieAlarm() {
+    alert("Time to cook");
+}
+setTimeout(cookieAlarm, 3000);
+
+setTimeout(function() {alert("Time to cook");}, 3000);
+
+setTimeout(function() {
+                alert("Time to cook");
+            }, 3000); */
+
+
+/* let migrating = true;
+let fly = function(num) {
+    let sound = "Flying";
+    function wingFlapper() {
+        console.log(sound);
+    }
+};
+function quack(num) {
+    let sound = "Quack";
+    let quacker = function() {
+        console.log(sound)
+    };
+    for (let i = 0; i < num; i++) {
+        quacker();
+    }
+}
+if (migrating) {
+    quack(4);
+    fly(4);
+} */
+
+/* let count = 0;
+function counter() {
+    count = count + 1;
+    return count
+}
+counter();
+
+function makeCounter() {
+    let count = 0;
+
+    function counter() {
+        count = count + 1;
+        return count;
+    }
+    return counter;
+} */
+
+/* let count = 0;
+
+window.onload = function() {
+    let button = document.getElementById("clickme");
+    button.onclick = handleClick;
+}
+
+function handleClick() {
+    let message = "You clicked me ";
+    let div = document.getElementById("message");
+    count++;
+    div.innerHTML = message + count + " times!";
+} */
+
+/* window.onload = function() {
+    let count = 0;
+    let message = "You clicked me ";
+    let div = document.getElementById("message");
+    
+    let button = document.getElementById("clickme");
+    button.onclick = function() {
+        count++;
+        div.innerHTML = message + count + " times!"
+    };
+}; */
+
+
+
+// =============== Function Expressions ======================================
 /* let fly = function(num) {
     for (let i = 0; i < num; i++) {
         console.log("Flying!");
@@ -52,7 +137,7 @@ processPassenger(passengers, printPassenger) */
 
 //----------------- Method SORT -------------------------------------------
 
-var products = [ { name: "Grapefruit", calories: 170, color: "red",     sold: 8200 },
+/* var products = [ { name: "Grapefruit", calories: 170, color: "red",     sold: 8200 },
                  { name: "Orange",     calories: 160, color: "orange",  sold: 12101 },
                  { name: "Cola",       calories: 210, color: "caramel", sold: 25412 },
                  { name: "Diet Cola",  calories: 0,   color: "caramel", sold: 43922 },
@@ -80,7 +165,7 @@ function printProducts (products) {
     }
 }
 products.sort(compareSold);
-printProducts(products);
+printProducts(products); */
 
 // ================ Event Handling ======================================================
 
