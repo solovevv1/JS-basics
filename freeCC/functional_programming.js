@@ -170,8 +170,6 @@ function remove(bookList, bookName) {
   }
 ];
 
-// Only change code below this line
-
 // const ratings = [];
 // for (let i = 0; i < watchList.length; i++) {
 //   ratings.push({title: watchList[i]["Title"],
@@ -219,4 +217,20 @@ console.log(JSON.stringify(ratings)); */
   }
   return newArray;
 }; */
+
+
+/* function getRating(watchList) {
+  
+  let averageRating = watchList
+    .filter(film => film.Director === "Christopher Nolan")
+    // Use map to convert their ratings from strings to numbers
+    .map(film => Number(film.imdbRating))
+    //   // Use reduce to add together their ratings
+    .reduce((sumOfRatings, rating) => sumOfRatings + rating) /
+    // // Divide by the number of Nolan films to get the average rating
+    watchList.filter(film => film.Director === "Christopher Nolan").length;
+    
+  return averageRating;
+} */
+
 
